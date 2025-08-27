@@ -1,4 +1,5 @@
 package school.sptech;
+import java.util.Scanner;
 
 public class Metodos {
     public static void exibeAsteriscos() {
@@ -38,11 +39,11 @@ public class Metodos {
         System.out.println();
         exibeQuadradoAsteriscos("Bom dia!");
 
-        Metodos , = new Metodos();
+        Metodos m = new Metodos();
         System.out.println(m.media(5.7, 6.5));
         Double media = (new Metodos()).media(8.9, 9.0);
         System.out.println();
-        System.out.println(media(6.8, 7.0));     // média de 2 números
+        System.out.println(m.media(6.8, 7.0));     // média de 2 números
         System.out.println(media(7.0, 8.5, 9.5)); // média de 3 números
 
     }
