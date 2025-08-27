@@ -1,14 +1,23 @@
 package school.sptech;
 
-public class TesteTermometro {
+public class TesteTermometroEncapsulado {
     public static void main(String[] args) {
         System.out.println("=== Termômetro 1 ===");
 
-        Termometro t1 = new Termometro();
-        Termometro term1 = new Termometro();
-        Termometro term2 = new Termometro();
+        TermometroEncapsulado t1 = new TermometroEncapsulado();
+        TermometroEncapsulado term1 = new TermometroEncapsulado();
+        TermometroEncapsulado term2 = new TermometroEncapsulado();
+
         System.out.println(term1);
         System.out.println(term2);
+
+
+        // Vantagens do encapsulamento
+
+        term1.setTemperaturaAtual(10.0);
+        term2.setTemperaturaMaxRegistrada(10.0);
+
+        System.out.println("Temperatura atual term1: " + term1.getTemperaturaAtual());
 
         //Parâmetro válido oooh
         term1.aumentarTemperatura(-5.0);

@@ -1,10 +1,9 @@
 package school.sptech;
 
-import java.util.Scanner;
-public class Termometro {
-    double temperaturaAtual = 0.0;
-    double temperaturaMaxRegistrada = 0.0;
-    double temperaturaMinRegistrada = 0.0;
+public class TermometroEncapsulado {
+    private double temperaturaAtual = 0.0;
+    private double temperaturaMaxRegistrada = 0.0;
+    private double temperaturaMinRegistrada = 0.0;
 
     public void aumentarTemperatura(Double valor) {
         if (valor == null || valor <= 0) {
@@ -41,6 +40,33 @@ public class Termometro {
         return "Temperatura Atual: " + temperaturaAtual +
                 "\nTemperatura Máxima Registrada: " + temperaturaMaxRegistrada +
                 "\nTemperatura Mínima Registrada: " + temperaturaMinRegistrada;
+    }
+
+    //Getters e Setters
+    // alt + insert
+
+    public double getTemperaturaAtual() {
+        return temperaturaAtual;
+    }
+
+    public void setTemperaturaAtual(double temperaturaNova) {
+        this.temperaturaAtual = temperaturaNova;
+    }
+
+    public double getTemperaturaMaxRegistrada() {
+        return temperaturaMaxRegistrada;
+    }
+
+    public void setTemperaturaMaxRegistrada(double temperaturaMaxRegistrada) {
+        this.temperaturaMaxRegistrada = temperaturaMaxRegistrada;
+    }
+
+    public double getTemperaturaMinRegistrada() {
+        return temperaturaMinRegistrada;
+    }
+
+    public void setTemperaturaMinRegistrada(double temperaturaMinRegistrada) {
+        this.temperaturaMinRegistrada = temperaturaMinRegistrada;
     }
 }
 
